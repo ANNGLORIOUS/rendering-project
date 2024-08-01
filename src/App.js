@@ -1,5 +1,7 @@
 import React from "react";
 import './App.css';
+import Content from "./Content";
+import Images from "./Images";
 
 class App extends React.Component {
   constructor() {
@@ -22,16 +24,16 @@ class App extends React.Component {
       <div>
         <div>
           {this.state.isLoggedIn ? (
-            <p>Welcome back!</p>
+            <button onClick={this.handleLogout}>Log Out</button>
           ) : (
-            <p>Please log in.</p>
+            <button onClick={this.handleLogin}>Log In</button>
           )}
         </div>
         <div>
           {this.state.isLoggedIn ? (
-            <button onClick={this.handleLogout}>Log Out</button>
+            <Content />
           ) : (
-            <button onClick={this.handleLogin}>Log In</button>
+            <Images />
           )}
         </div>
       </div>

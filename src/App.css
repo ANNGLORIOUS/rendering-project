@@ -2,7 +2,7 @@ body {
   padding: 1em;
 }
 
-h1 {
+p {
   font-size: 3em;
   font-weight: 500;
   text-align: center;
@@ -10,13 +10,46 @@ h1 {
   margin-right: 1em;
   padding: 0;
 }
+h1 {
+  font-size: 5em;
+  font-weight: 500;
+  text-align: center;
+  margin-right: 1em;
+  padding: 0;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+  margin-right: 1em;
+  padding: 0;
+  cursor: pointer;
+  background-color: #00006D;
+  height: 50px;
+  
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+
+}
+
+nav ul li a {
+  color: #ffffff;
+}
+
+
 
 button {
   appearance: none;
   background-color: #246bec;
   border: 1px solid #246bec;
-  border-radius: 0;
-  box-sizing: border-box;
+  border-radius: 50px;
+  box-sizing:border-box;
   color: #ffffff;
   display: block;
   font-size: 2em;
@@ -24,8 +57,8 @@ button {
   margin-bottom: 1em;
   margin-top: 1em;
   padding: .5em;
-  width: 100%;
   transition: border-color, background-color 300ms ease-in-out;
+  
 }
 
 button:focus {
